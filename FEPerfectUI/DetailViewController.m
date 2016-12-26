@@ -38,19 +38,15 @@ static NSString *cellIdentifier = @"DetailTableViewCell";
 
     DetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (indexPath.row%2 == 0) {
-        cell.contentLabel.text = @"测试";
+        cell.contentLabel.text = @"简书-FlyElephant";
     } else {
-        cell.contentLabel.text = @"test";
+        cell.contentLabel.text = @"FlyElephant";
     }
+//    cell.contentLabel.backgroundColor = [UIColor redColor];
     
-//    NSLog(@"Cell的背景颜色---%@",cell.backgroundColor);
-//  
-    cell.backgroundColor = [UIColor clearColor];
-//
-//        NSLog(@"Cell的背景颜色---%@",cell.backgroundColor);
-    
-    cell.contentLabel.backgroundColor = cell.backgroundColor;
-    //cell.contentLabel.layer.masksToBounds = YES;// 中文字体需要此设置
+//    cell.backgroundColor = [UIColor clearColor];
+//    cell.contentLabel.backgroundColor = cell.backgroundColor;
+//    cell.contentLabel.layer.masksToBounds = YES;// 中文字体需要此设置
     return cell;
 }
 
