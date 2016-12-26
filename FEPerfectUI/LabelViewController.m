@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
     
     self.showLabel.opaque = YES;
-//    self.showLabel.layer.masksToBounds = YES;
+    self.showLabel.layer.masksToBounds = YES;
     
     UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 300, 200, 100)];
     testLabel.backgroundColor = [UIColor darkGrayColor];
@@ -30,7 +30,7 @@
 //    testLabel.opaque = YES;
     testLabel.font = [UIFont systemFontOfSize:14];
     testLabel.textColor = [UIColor blackColor];
-//    testLabel.layer.masksToBounds = YES;
+    testLabel.layer.masksToBounds = YES;
     [self.view addSubview:testLabel];
 }
 

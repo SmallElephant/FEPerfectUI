@@ -42,16 +42,16 @@ static NSString *cellIdentifier = @"DetailTableViewCell";
     } else {
         cell.contentLabel.text = @"FlyElephant";
     }
-//    cell.contentLabel.backgroundColor = [UIColor redColor];
-    
-//    cell.backgroundColor = [UIColor clearColor];
-//    cell.contentLabel.backgroundColor = cell.backgroundColor;
-//    cell.contentLabel.layer.masksToBounds = YES;// 中文字体需要此设置
+    cell.backgroundColor = [UIColor whiteColor];
+    cell.contentLabel.backgroundColor = cell.backgroundColor;
+    cell.contentLabel.layer.masksToBounds = YES;// 中文字体需要此设置
+
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 60.0f;
 }
+
 
 @end
